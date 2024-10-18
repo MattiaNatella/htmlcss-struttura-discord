@@ -113,6 +113,15 @@ main section#hero ~ section:nth-child(even) {
   background-color: green;
 }
 
+/* NON FUNZIONA PER PROBLEMA SPECIFICITA', INSERITO ATTRIBUTO STYLE SU HTML
+
+main section#pre-footer:last-child {
+  background-color: #23272A;
+}
+
+*/
+
+
 section#hero div {
   max-width: 900px;
   height: 400px; /*DEBUG*/
