@@ -31,7 +31,7 @@ h1 {
   background-color: rgba(255, 0, 0, 0.2);
   Color: white;
   border: 2px dashed  black;
-  min-height: 50px;
+  /* min-height: 50px; */
 }
 
 .container {
@@ -44,16 +44,16 @@ h1 {
   width: 100%;
 }
 
-.w-70 {
+.w-60 {
   content: "Blocco Immagine";
   background-color: crimson;
-  width: 70%;
+  width: 60%;
 }
 
-.w-30 {
+.w-40 {
   content: "Blocco testo";
   background-color: brown;
-  width: 30%;
+  width: 40%;
 }
 
 
@@ -129,4 +129,19 @@ section#hero div {
 
 main section div:first-child {
   height: 500px; /*DEBUG*/
+}
+
+#tecnologia .container {
+  width: 1100px;
+  height: 1100px;
+}
+
+#pre-footer .col:not(:first-child) {
+  background-color: aqua;
+  width: 200px;
+}
+
+#pre-footer .col:first-child {
+  background-color: pink;
+  width: calc(100% - 800px);
 }
