@@ -20,13 +20,6 @@ footer {
   background-color: blueviolet;
 }
 
-section:nth-child(odd) {
-  background-color: white;
-}
-
-section:nth-child(even) {
-  background-color: lightgray;
-}
 
 
 /* ***************************UTILITY*************************** */
@@ -35,6 +28,7 @@ section:nth-child(even) {
   background-color: rgba(255, 0, 0, 0.2);
   Color: white;
   border: 2px solid black;
+  min-height: 50px;
 }
 
 .container {
@@ -46,6 +40,19 @@ section:nth-child(even) {
 .container-fluid {
   width: 100%;
 }
+
+.w-70 {
+  content: "Blocco Immagine";
+  background-color: crimson;
+  width: 70%;
+}
+
+.w-30 {
+  content: "Blocco testo";
+  background-color: brown;
+  width: 30%;
+}
+
 
 .row {
   display: flex;
@@ -82,4 +89,27 @@ header div.col:last-child {
 header a {
   text-decoration: none;
 }
+
+/* ***************************MAIN*************************** */
+main section {
+  padding: 50px;
+}
+
+
+main section:first-child {
+  background-color:darkblue;
+}
+
+section#hero div {
+  height: 400px; /*DEBUG*/
+} 
+
+main section#hero ~ section:nth-child(odd) {
+  background-color: red;
+}
+
+main section#hero ~ section:nth-child(even) {
+  background-color: green;
+}
+
 
